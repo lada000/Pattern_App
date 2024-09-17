@@ -1,0 +1,41 @@
+<h1>Register</h1>
+
+<%= form_with model: @registration_form, url: registrations_path do |f| %>
+  <h2>User Information</h2>
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation %>
+
+  <h2>Address Information</h2>
+  <%= f.label :country %>
+  <%= f.text_field :country %>
+
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+
+  <%= f.label :street %>
+  <%= f.text_field :street %>
+
+  <%= f.label :house %>
+  <%= f.text_field :house %>
+
+  <%= f.label :apartment %>
+  <%= f.text_field :apartment %>
+
+  <h2>Virtual Card Information</h2>
+  <%= f.label :card_number %>
+  <%= f.text_field :card_number %>
+
+  <%= f.label :card_name %>
+  <%= f.text_field :card_name %>
+
+  <%= f.label :balance %>
+  <%= f.number_field :balance, step: 0.01 %>
+
+  <%= f.submit 'Register' %>
+<% end %>

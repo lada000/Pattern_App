@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome, <%= @user.email %>!</h1>
+
+    <p>
+      Thank you for registering on our website.
+    </p>
+
+    <p>
+      You have successfully registered with the following login: <%= @user.email %>
+    </p>
+
+    <p>
+      <strong>Your Address Information:</strong><br>
+      Country: <%= @user.address.country %><br>
+      City: <%= @user.address.city %><br>
+      Street: <%= @user.address.street %>, House <%= @user.address.house %>, Apartment <%= @user.address.apartment %>
+    </p>
+
+    <p>
+      <strong>Your Virtual Card Information:</strong><br>
+      Card Number: <%= @user.virtual_card.card_number %><br>
+      Card Name: <%= @user.virtual_card.name %><br>
+      Balance: <%= @user.virtual_card.balance %> BYN
+    </p>
+
+    <p>
+      You can now log in to your account and view your balance in different currencies (USD, EUR, BYN, RUB).
+    </p>
+
+    <p>
+      Best regards,<br>
+      The Team
+    </p>
+  </body>
+</html>

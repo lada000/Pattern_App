@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>New User Registration</h1>
+
+    <p>
+      A new user has registered on the website.
+    </p>
+
+    <p>
+      <strong>User Details:</strong><br>
+      Login (Email): <%= @user.email %>
+    </p>
+
+    <p>
+      <strong>Address Information:</strong><br>
+      Country: <%= @user.address.country %><br>
+      City: <%= @user.address.city %><br>
+      Street: <%= @user.address.street %>, House <%= @user.address.house %>, Apartment <%= @user.address.apartment %>
+    </p>
+
+    <p>
+      <strong>Virtual Card Information:</strong><br>
+      Card Number: <%= @user.virtual_card.card_number %><br>
+      Card Name: <%= @user.virtual_card.name %><br>
+      Balance: <%= @user.virtual_card.balance %> BYN
+    </p>
+
+    <p>
+      Please review the user's details in the system.
+    </p>
+
+    <p>
+      Regards,<br>
+      Notification System
+    </p>
+  </body>
+</html>

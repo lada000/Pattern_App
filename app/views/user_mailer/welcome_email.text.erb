@@ -1,0 +1,20 @@
+Welcome, <%= @user.email %>!
+
+Thank you for registering on our website.
+
+You have successfully registered with the following login: <%= @user.email %>
+
+Your Address Information:
+Country: <%= @user.address.country %>
+City: <%= @user.address.city %>
+Street: <%= @user.address.street %>, House <%= @user.address.house %>, Apartment <%= @user.address.apartment %>
+
+Your Virtual Card Information:
+Card Number: <%= @user.virtual_card.card_number %>
+Card Name: <%= @user.virtual_card.name %>
+Balance: <%= @user.virtual_card.balance %> BYN
+
+You can now log in to your account and view your balance in different currencies (USD, EUR, BYN, RUB).
+
+Best regards,
+The Team

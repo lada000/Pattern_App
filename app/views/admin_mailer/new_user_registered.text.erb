@@ -1,0 +1,21 @@
+New User Registration
+
+A new user has registered on the website.
+
+User Details:
+Login (Email): <%= @user.email %>
+
+Address Information:
+Country: <%= @user.address.country %>
+City: <%= @user.address.city %>
+Street: <%= @user.address.street %>, House <%= @user.address.house %>, Apartment <%= @user.address.apartment %>
+
+Virtual Card Information:
+Card Number: <%= @user.virtual_card.card_number %>
+Card Name: <%= @user.virtual_card.name %>
+Balance: <%= @user.virtual_card.balance %> BYN
+
+Please review the user's details in the system.
+
+Regards,
+Notification System
